@@ -1687,6 +1687,7 @@ $color-highlight2: #dd7041;
   }
 
   @media (max-width: 1024px) {
+    margin-bottom: 215px;
     &-content {
       &-left {
         margin-bottom: 24px;
@@ -1905,7 +1906,7 @@ $color-highlight2: #dd7041;
     }
   }
 
-  @media (max-width: 475px) {
+  @media (max-width: 1024px) {
     &-box {
       &-content img {
         width: 20.45vw;
