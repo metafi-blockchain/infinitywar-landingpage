@@ -1,0 +1,112 @@
+.iw-media {
+  padding-top: 40px;
+  .iw-section-title {
+    margin-bottom: 10px;
+  }
+  .nav-tabs {
+    margin-bottom: 26px;
+    border: 0;
+    gap: 30px;
+    .nav-link {
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+      border-radius: 0 !important;
+      &.active {
+        span {
+          background-color: rgba($color: #dd7041, $alpha: 0.9);
+        }
+      }
+    }
+  }
+  .iw-media-slide {
+    margin-bottom: 26px;
+    .slide-item.slick-slide {
+      transition: transform 0.5s ease;
+      position: relative;
+    }
+    .slick-slide:after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: transform 0.4s;
+    }
+    .slide-item.slick-slide {
+      transform-origin: right center;
+      transform: scale(0.6) translate(640px);
+      opacity: 0.5;
+    }
+
+    .slide-item.slick-slide.slick-center + .slick-slide {
+      transform-origin: left center;
+      transform: scale(0.6) translate(-250px);
+      z-index: 10;
+    }
+
+    .slide-item.slick-slide.slick-center {
+      transform: scale(1);
+      z-index: 30;
+      opacity: 1;
+    }
+
+    .slick-center:after {
+      opacity: 0;
+      margin: 10px;
+      padding: 10px;
+    }
+    .slide-item {
+      padding: 18px;
+      background-image: url(../images/media-slide-border.svg);
+      background-size: 100% 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(
+          55px 0,
+          100% 0,
+          100% calc(100% - 70px),
+          calc(100% - 55px) 100%,
+          0 100%,
+          0 70px
+        );
+      }
+    }
+  }
+  .iw-media-slide-nav {
+    width: 1026px;
+    max-width: 100%;
+    margin: 0 auto;
+    .slide-nav-item {
+      padding: 0 9px;
+      img {
+        max-width: 100%;
+      }
+      &.slick-active {
+        position: relative;
+        opacity: 0.8;
+        transition: all ease-in-out 0.3s;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: #000000, $alpha: 0.6);
+          opacity: 1;
+          transition: all ease-in-out 0.3s;
+        }
+      }
+      &.slick-current {
+        opacity: 1;
+        &::after {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

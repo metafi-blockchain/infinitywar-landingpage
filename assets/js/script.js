@@ -62,6 +62,24 @@ $(document).ready(function () {
       // instead of a settings object
     ]
   })
+
+  $('.iw-media-slide').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    arrows: true,
+    dots: false,
+    centerPadding: '100px',
+    asNavFor: '.iw-media-slide-nav'
+  })
+  $('.iw-media-slide-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.iw-media-slide',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true
+  })
 })
 
 $(window).resize(function () {
