@@ -189,6 +189,11 @@ $color-highlight2: #dd7041;
       width: auto;
     }
   }
+  @media (max-width: 767px) {
+    img {
+      display: none;
+    }
+  }
 }
 
 .iw-header {
@@ -1176,6 +1181,7 @@ $color-highlight2: #dd7041;
   &-content {
     padding: 16px 24px;
     position: relative;
+    overflow: hidden;
     clip-path: polygon(
       50px 0%,
       100% 0%,
@@ -1185,29 +1191,24 @@ $color-highlight2: #dd7041;
       0% 54px
     );
     border: 1px solid #46b0ee;
-
-    &::before {
+    &::before,
+    &:after {
       content: '';
       position: absolute;
-      bottom: -48px;
-      right: 0;
       width: 1px;
       height: 200px;
       background-color: #46b0ee;
       transform: rotate(43deg);
+    }
+    &::before {
+      bottom: -48px;
+      right: 0;
     }
 
     &::after {
-      content: '';
-      position: absolute;
       top: -48px;
       left: 0;
-      width: 1px;
-      height: 200px;
-      background-color: #46b0ee;
-      transform: rotate(43deg);
     }
-
     &-left {
       display: flex;
       flex-direction: column;
@@ -1686,7 +1687,6 @@ $color-highlight2: #dd7041;
   }
 
   @media (max-width: 1024px) {
-    
     &-content {
       &-left {
         margin-bottom: 24px;
