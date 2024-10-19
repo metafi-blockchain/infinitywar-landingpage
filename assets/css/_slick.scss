@@ -1,0 +1,17 @@
+.slick-arrow {
+  width: 41px;
+  height: 51px;
+  padding: 0;
+  background-size: cover;
+  &::before {
+    display: none;
+  }
+  &.slick-next {
+    background-image: url(../images/icons/slide-arrow-right.svg);
+    right: calc(-41px - 24px);
+  }
+  &.slick-prev {
+    background-image: url(../images/icons/slide-arrow-left.svg);
+    left: calc(-41px - 24px);
+  }
+}

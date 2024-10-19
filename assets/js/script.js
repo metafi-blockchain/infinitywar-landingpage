@@ -1,3 +1,5 @@
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 function formatAddress(address) {
   let firstPart = address.substring(2, 22)
 
@@ -79,6 +81,13 @@ $(document).ready(function () {
     dots: false,
     arrows: false,
     focusOnSelect: true
+  })
+  
+  $('.iw-news-slide').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    arrows: true,
   })
 })
 
