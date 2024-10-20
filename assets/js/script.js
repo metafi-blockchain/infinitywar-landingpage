@@ -118,19 +118,4 @@ $(document).ready(function () {
     $('#bg-banner img').attr('src', 'assets/images/bg_mobile.png')
     $('#bg-banner').css('z-index', '1')
   }
-
-  if (screenWidth <= 1024) {
-    // const MTF_address = $('#MTF_address').text()
-    // $('#MTF_address').text(formatAddress(MTF_address))
-
-    // const IFW_address = $('#IFW_address').text()
-    // $('#IFW_address').text(formatAddress(IFW_address))
-    $('#milestone_bg').attr('src', 'assets/images/milestone_mobile_bg.png')
-    $('#milestone_core_mobile').attr(
-      'src',
-      'assets/images/milestone_core_mobile.png'
-    )
-  } else {
-    console.log('Màn hình lớn hơn 475px.')
-  }
 })
