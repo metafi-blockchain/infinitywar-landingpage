@@ -1738,26 +1738,6 @@ $color-highlight2: #dd7041;
     height: auto;
   }
 
-  &-actor {
-    &-1 {
-      position: absolute;
-      bottom: -1.98vw;
-      left: 0;
-      z-index: 2;
-      width: 14.68vw;
-      height: auto;
-    }
-
-    &-2 {
-      position: absolute;
-      bottom: -2.44vw;
-      right: -3.125vw;
-      z-index: 2;
-      width: 17.77vw;
-      height: auto;
-    }
-  }
-
   &-box {
     position: absolute;
     z-index: 2;
