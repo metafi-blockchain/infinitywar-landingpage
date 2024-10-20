@@ -1,6 +1,10 @@
 .iw-gameplay {
   background-image: url(../images/background/game-play.png);
   background-size: 100% 100%;
+  padding-top: 117px;
+  .iw-section-title {
+    margin-bottom: 40px;
+  }
   &-wrap {
     display: flex;
     flex-direction: column;
