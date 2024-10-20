@@ -1,5 +1,6 @@
 .iw-token {
   position: relative;
+  margin-bottom: 80px;
   .iw-section-title {
     position: absolute;
     top: 100px;
@@ -25,10 +26,15 @@
   }
 
   &.ifw-section {
+    margin-bottom: 130px;
     .iw-token-container {
       position: relative;
       top: unset;
       left: unset;
+    }
+
+    .iw-token-wrap {
+      margin-top: 0;
     }
 
     .iw-section-title {
@@ -50,22 +56,31 @@
     left: 0;
     width: 100%;
     transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
     .token-icon {
       position: relative;
       img {
-        width: 100%;
+        width: 40.6vw;
         height: auto;
       }
       .bg-shadow {
         position: absolute;
-        top: 50%;
-        left: -10%;
-        width: 47.96vw;
+        top: 45%;
+        left: -50px;
+        width: 58vw;
         height: auto;
         transform: translateY(-30%);
         z-index: -1;
       }
     }
+  }
+
+  &-wrap {
+    display: flex;
+    align-items: center;
+    width: 77.56vw;
+    margin-top: 71px;
   }
 
   &-main {
