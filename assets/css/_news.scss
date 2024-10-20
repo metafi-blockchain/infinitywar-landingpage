@@ -1,6 +1,8 @@
 .iw-news {
   padding-top: 88px;
   overflow: hidden;
+  background-image: url(../images/background/news.png);
+  background-size: cover;
   .iw-section-title {
     margin-bottom: 40px;
     white-space: nowrap;
@@ -9,12 +11,20 @@
     .slide-item {
       margin: 0 15px;
       .image {
+        display: block;
         height: 300px;
         overflow: hidden;
+        &:hover{
+          img{
+            transform: scale(1.05);
+          }
+        }
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transform-origin: center;
+          transition: all ease-in-out .3s;
         }
       }
       .info {

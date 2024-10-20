@@ -1,0 +1,66 @@
+.iw-gameplay {
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &-item {
+    &-header,
+    &-bot {
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-header {
+      .item-img {
+        position: absolute;
+        top: 13px;
+        left: 50%;
+        transform: translate(-50%);
+        width: calc(100% - 26px);
+        height: auto;
+        z-index: -1;
+      }
+
+      .play {
+        position: absolute;
+        width: 27.22%;
+        height: auto;
+        left: 50%;
+        transform: translate(-50%);
+        cursor: pointer;
+        z-index: 2;
+        bottom: 16%;
+      }
+    }
+
+    &-content {
+      max-width: 85%;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -40%);
+      min-height: 89px;
+      h3 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35.16px;
+        text-align: left;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.09px;
+        text-align: left;
+        margin: 0;
+      }
+    }
+  }
+}
