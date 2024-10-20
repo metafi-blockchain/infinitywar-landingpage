@@ -1,0 +1,52 @@
+.iw-infinity-war {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+  }
+
+  &-paragraph {
+    max-width: 47.03vw;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p {
+        margin: 0;
+    }
+  }
+
+  .magic-book {
+    margin-top: -289px;
+    z-index: -1;
+  }
+
+  .actor {
+    position: absolute;
+    width: 467px;
+    height: auto;
+    top: -20%;
+    left: calc(-467px + 230px);
+  }
+
+  &-btns {
+    min-width: 547px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    margin-top: 40px;
+
+    .iw-btn.btn.btn-warning {
+        height: 61px;
+        width: 50%;
+        padding: 0;
+    }
+  }
+}

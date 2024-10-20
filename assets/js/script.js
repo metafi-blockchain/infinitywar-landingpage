@@ -105,9 +105,7 @@ $(document).ready(function () {
     dots: false,
     arrows: true
   })
-})
 
-$(window).resize(function () {
   var screenWidth = $(window).width()
 
   if (screenWidth <= 475) {

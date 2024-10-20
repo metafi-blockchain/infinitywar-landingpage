@@ -5,36 +5,18 @@
     margin-bottom: 0px;
   }
   .inner {
-    background-image: url(../images/map.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 152px 91px 97px 43px;
-    display: flex;
-    flex-direction: column;
+    position: relative;
   }
   .item {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    gap: 60px;
+    position: absolute;
+    &-wrap {
+      position: relative;
+    }
     > img {
       filter: drop-shadow(0px 0px 34px #00d8ff);
     }
     .info {
-      position: relative;
-      --border-color: #46b0ee;
-      background: linear-gradient(var(--border-color), var(--border-color)) top
-          left,
-        linear-gradient(var(--border-color), var(--border-color)) top left,
-        linear-gradient(var(--border-color), var(--border-color)) top right,
-        linear-gradient(var(--border-color), var(--border-color)) top right,
-        linear-gradient(var(--border-color), var(--border-color)) bottom left,
-        linear-gradient(var(--border-color), var(--border-color)) bottom left,
-        linear-gradient(var(--border-color), var(--border-color)) bottom right,
-        linear-gradient(var(--border-color), var(--border-color)) bottom right;
-      background-size: 1px 60px, 50px 1px;
-      background-repeat: no-repeat;
-      transition: all ease-in-out 0.3s;
+      position: absolute;
       padding: 20px 10px;
       background: #0012b56e;
       .link{
@@ -77,11 +59,12 @@
     }
   }
   .item-1 {
-    margin-left: 175px;
+    top: 9.27vw;
+    left: 11.61vw;
     .info {
-      width: 498px;
-      max-width: 100%;
-      margin-top: 42px;
+      width: 25.93vw;
+      right: -28.8vw;
+      top: 2vw;
       .link {
         position: absolute;
         top: -11px;
@@ -91,14 +74,12 @@
     }
   }
   .item-2 {
-    margin-left: auto;
-    margin-top: -129px;
-    gap: 0;
+    top: 27.07vw;
+    right: 3.8vw;
     .info {
-      margin-top: 157px;
-      width: 517px;
-      max-width: 100%;
-      margin-right: -15px;
+      width: 26.92vw;
+      left: -26.5vw;
+      top: 8.3vw;
       .link {
         position: absolute;
         top: 35px;
@@ -108,16 +89,62 @@
     }
   }
   .item-3 {
-    margin-left: 119px;
-    // margin-top: -184px;
-    margin-top: 20px;
-    gap: 23px;
-    >img{
-      margin-top: 71px;
-    }
+    left: 8.69vw;
+    top: 45.2vw;
     .info {
-      width: 498px;
-      max-width: 100%;
+      right: -27vw;
+      top: -3.5vw;
+      width: 25.93vw;
+      .link {
+        position: absolute;
+        top: 32px;
+        left: 0;
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  .item-4 {
+    bottom: 32.55vw;
+    right: 6.71vw;
+
+    .info {
+      left: -26.5vw;
+      top: 4.5vw;
+      width: 25.67vw;
+      .link {
+        position: absolute;
+        top: -55px;
+        right: -130px;
+      }
+    }
+  }
+
+  .item-5 {
+    bottom: 14vw;
+    left: 2.5vw;
+
+    .info {
+      right: -24vw;
+      top: -12vw;
+      width: 25.93vw;
+      .link {
+        position: absolute;
+        top: 32px;
+        left: 0;
+        transform: translateX(-100%);
+      }
+    }
+  }
+
+  .item-6 {
+    bottom: 5.5vw;
+    left: 32.5vw;
+
+    .info {
+      right: -29vw;
+      top: -3.5vw;
+      width: 25.93vw;
       .link {
         position: absolute;
         top: 32px;

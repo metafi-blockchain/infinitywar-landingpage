@@ -1,0 +1,182 @@
+.iw-game-economy {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &-left {
+    width: 51.04vw;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-wrap {
+    width: 83.22vw;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    padding: 0 42px 42px;
+
+    position: relative;
+
+    overflow: hidden;
+    clip-path: polygon(
+      50px 0%,
+      100% 0%,
+      100% calc(100% - 54px),
+      calc(100% - 50px) 100%,
+      0% 100%,
+      0% 54px
+    );
+    border: 1px solid #46b0ee;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 200px;
+      background-color: #46b0ee;
+      transform: rotate(43deg);
+    }
+
+    &::before {
+      bottom: -48px;
+      right: 0;
+    }
+
+    &::after {
+      top: -48px;
+      left: 0;
+    }
+  }
+
+  &-specification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 20px;
+      border-left: 6px solid #46b0ee;
+      h3 {
+        margin: 0;
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 32.32px;
+        text-align: left;
+      }
+
+      span {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35.91px;
+        text-align: left;
+        color: #46b0ee;
+      }
+    }
+  }
+
+  &-legend {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 5.5px 0;
+    width: 25.26vw;
+    cursor: pointer;
+    .legend {
+      min-width: 10.31vw;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    &.item-1 {
+      .legend {
+        background-color: #2679e1;
+      }
+    }
+
+    &.item-2 {
+      .legend {
+        background-color: #105dbc;
+      }
+    }
+
+    &.item-3 {
+      .legend {
+        background-color: #267ce3;
+      }
+    }
+
+    &.item-4 {
+      .legend {
+        background-color: #05ce8c;
+      }
+    }
+
+    &.item-5 {
+      .legend {
+        background-color: #119ac1;
+      }
+    }
+
+    &.item-6 {
+      .legend {
+        background-color: #10b2ab;
+      }
+    }
+
+    &.item-7 {
+      .legend {
+        background-color: #35e4e7;
+      }
+    }
+
+    &.item-8 {
+      .legend {
+        background-color: #0ca84a;
+      }
+    }
+
+    &.item-9 {
+      .legend {
+        background-color: #ff7e51;
+      }
+    }
+
+    &.item-10 {
+      .legend {
+        background-color: #36919b;
+      }
+    }
+
+    &.active {
+      background: #0d0d0d80;
+      .desc {
+        color: #dd7041;
+      }
+    }
+
+    .desc {
+      margin: 0;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16.41px;
+      text-align: left;
+    }
+  }
+}
