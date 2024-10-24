@@ -13,41 +13,78 @@
   &-content {
     &-title {
       position: relative;
+      width: fit-content;
+      img {
+        width: 40.77vw;
+        height: auto;
+      }
 
       h3 {
         position: absolute;
-        top: 10%;
-        left: 15%;
+        top: 7%;
+        left: 20%;
         margin: 0;
 
         font-size: 48px;
         font-weight: 700;
         line-height: 56.25px;
         text-align: center;
+
+        @media (max-width: 1024px) {
+          font-size: 32px;
+          line-height: normal;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 16px;
+          line-height: normal;
+        }
       }
     }
 
     &-desc {
       position: relative;
+      width: fit-content;
+      img {
+        width: 35.625vw;
+        height: auto;
+      }
 
       p {
         position: absolute;
         top: 10%;
         left: 4%;
         margin: 0;
-        max-width: 583px;
+        max-width: 90%;
 
         font-size: 25px;
         font-weight: 500;
         line-height: 29.3px;
         text-align: left;
+
+        @media (max-width: 1440px) {
+          font-size: 18px;
+          line-height: normal;
+        }
       }
     }
 
     &-right {
-      left: 44.32vw;
+      left: 40.32vw;
       top: 3.28vw;
       position: absolute;
+
+      img {
+        width: 61vw;
+        height: auto;
+      }
+    }
+
+    &-actor {
+      img {
+        width: 29.63vw;
+        height: auto;
+      }
     }
   }
 }

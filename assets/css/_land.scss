@@ -38,11 +38,39 @@
       width: 631px;
       max-width: 100%;
     }
-    .iw-btn.btn.btn-warning::before, .iw-btn.btn.btn-warning::after{
-      background-color: #CD3E00;
+    .iw-btn.btn.btn-warning::before,
+    .iw-btn.btn.btn-warning::after {
+      background-color: #cd3e00;
     }
     .iw-btn.btn.btn-warning:hover {
-      color: #CD3E00;
-  }
+      color: #cd3e00;
+    }
+
+    @media (max-width: 1024px) {
+      h3 {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        max-width: 64.68vw;
+      }
+    }
+
+    @media (max-width: 475px) {
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 30%;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35.16px;
+        text-align: center;
+        max-width: 64.68vw;
+      }
+    }
   }
 }

@@ -14,10 +14,27 @@
     background-repeat: no-repeat;
     mix-blend-mode: screen;
   }
+
+  @media (max-width: 475px) {
+    background-image: url(../images/background/about-infinity-war-bg.png);
+    background-size: cover;
+    z-index: 3;
+    &::after {
+      background-image: url(../images/book_mb.png);
+    }
+  }
   .iw-section-title {
     padding-top: 34px;
     white-space: nowrap;
     margin-bottom: 78px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 475px) {
+      margin-bottom: 20px;
+    }
   }
   .body {
     display: flex;
@@ -30,16 +47,50 @@
       margin-bottom: -32.35%;
       margin-right: -3vw;
     }
+
+    @media (max-width: 1024px) {
+      align-items: center;
+      justify-content: space-between;
+      
+      .actor {
+        width: 31.6vw;
+        margin: 0;
+        margin-left: -3vw;
+        margin-bottom: 63px;
+      }
+    }
+
+    @media (max-width: 475px) {
+      .actor {
+        margin: 0;
+        margin-bottom: 63px;
+      }
+    }
   }
   .content {
     width: 903px;
     max-width: 100%;
-    margin-bottom:63px;
+    margin-bottom: 63px;
     font-weight: 300;
     font-size: 25px;
     line-height: 32px;
     color: #ffffff;
     padding: 10px 29px 28px 29px;
+
+    @media (max-width: 1024px) {
+      width: 62.27vw;
+      padding: 0;
+      max-height: 48vw;
+      overflow-y: scroll;
+    }
+
+    @media (max-width: 475px) {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 13.61px;
+      text-align: justify;
+      padding-right: 20px;
+    }
   }
   .buttons {
     display: flex;
@@ -47,6 +98,14 @@
     justify-content: center;
     gap: 40px;
     padding-bottom: 143px;
+
+    @media (max-width: 475px) {
+      gap: 12px;
+
+      a {
+        width: 50%;
+      }
+    }
   }
   .iw-btn.btn.btn-warning::before,
   .iw-btn.btn.btn-warning::after {
