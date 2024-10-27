@@ -243,6 +243,7 @@ $color-highlight2: #dd7041;
   justify-content: center;
   gap: 22px;
   margin-bottom: 71px;
+  white-space: nowrap;
   span {
     font-weight: 700;
     font-size: 48px;
@@ -549,6 +550,33 @@ $color-highlight2: #dd7041;
 }
 .iw-banner {
   position: relative;
+  @media (min-height: 740px) {
+    min-height: 900px;
+  }
+  @media (max-width: 1199px) {
+    min-height: unset;
+  }
+  @media (max-width: 991px) {
+    min-height: 500px;
+  }
+  @media (max-width: 991px) {
+    min-height: 500px;
+  }
+  @media (max-width: 428px) {
+    min-height: 900px;
+  }
+  .bg-mobile {
+    display: none;
+  }
+  @media (max-width: 428px) {
+    margin-bottom: -119px;
+    .bg-desktop {
+      display: none;
+    }
+    .bg-mobile {
+      display: block;
+    }
+  }
   .logo-banner {
     display: none;
     @media (max-width: 767px) {
@@ -564,10 +592,14 @@ $color-highlight2: #dd7041;
     text-align: center;
     width: 100%;
     top: 55vh;
-    @media (max-width: 767px) {
-      position: relative !important;
-      top: 0 !important;
-      margin-top: -150px;
+    @media (min-height: 740px) {
+      top: 300px;
+    }
+    @media (max-width: 991px) {
+      top: 200px !important;
+    }
+    @media (max-width: 428px) {
+      top: 453px !important;
     }
     button {
       background-color: transparent;
@@ -640,12 +672,17 @@ $color-highlight2: #dd7041;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+      @media (max-width: 1499px) {
+        font-size: 70px;
+      }
+      br {
+        display: none;
+      }
     }
   }
 
   @media (max-width: 1199px) {
     &-inner {
-      top: 46vh;
       button {
         width: 55px;
         height: 55px;
@@ -671,6 +708,12 @@ $color-highlight2: #dd7041;
           line-height: 38.67px;
           letter-spacing: -0.03em;
           text-align: center;
+          @media (max-width: 400px) {
+            font-size: 28px;
+            br {
+              display: block;
+            }
+          }
         }
       }
     }
@@ -752,14 +795,18 @@ $color-highlight2: #dd7041;
     align-items: center;
     justify-content: center;
     gap: 43px;
+    @media (max-width: 1399px) {
+      align-items: flex-end;
+    }
     .addresses {
       display: flex;
       flex-direction: column;
       gap: 8px;
       z-index: 1;
-      @media (max-width: 767px) {
+      @media (max-width: 1399px) {
         flex-direction: row;
         gap: 11px;
+        margin-top: 10px;
       }
 
       .item {
@@ -767,10 +814,10 @@ $color-highlight2: #dd7041;
         align-items: center;
         justify-content: center;
         gap: 14px;
-        @media (max-width: 767px) {
+        @media (max-width: 1399px) {
           flex-direction: column;
           align-items: flex-start;
-          gap: 5px;
+          gap: 10px;
         }
 
         .item-header {
@@ -807,7 +854,7 @@ $color-highlight2: #dd7041;
           line-height: 16.41px;
           text-align: left;
           position: relative;
-          @media (max-width: 767px) {
+          @media (max-width: 1399px) {
             padding: 10px;
             gap: 10px;
             word-break: break-all;

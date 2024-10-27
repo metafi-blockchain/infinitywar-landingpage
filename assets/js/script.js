@@ -15,7 +15,43 @@ function formatAddress(address) {
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
+function setResponsive() {
+  var screenWidth = $(window).width()
 
+  if (screenWidth <= 1024) {
+    $('#milestone_core_mobile').attr(
+      'src',
+      'assets/images/milestone/milestone_core_mobile.png'
+    )
+    $('#milestone_bg').attr(
+      'src',
+      'assets/images/milestone/milestone_mobile_bg.png'
+    )
+
+    $('#milestone_core_bg').attr(
+      'src',
+      'assets/images/milestone/milestone_core-bg_mobile.png'
+    )
+
+    $('#mtf_token').attr('src', 'assets/images/token/mtf_token_mb.png')
+    $('#avalanche').attr('src', 'assets/images/supportchain/avalanche_mb.png')
+    $('#iw-roadmap-inner').addClass('container')
+    $('#iw-supported-wrap').addClass('container')
+    $('#iw-token-ifw-wrap').addClass('container')
+    $('#iw-token-mtf-wrap').addClass('container')
+    $('#iw-game-economy-wrap').addClass('container')
+  } else {
+    $('.advisors-slide').slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      dots: false,
+      arrows: true
+    })
+  }
+}
+window.on('resize', () => {
+  setResponsive()
+})
 $(document).ready(function () {
   $('#header-menu-btn').click(function () {
     const buttonToggleSrc = $('#header-menu-btn img').attr('src')
@@ -68,7 +104,6 @@ $(document).ready(function () {
   })
 
   const listItem = $('.news-item')
-
   listItem.each(function (item) {
     const itemId = listItem[item].id
 
@@ -92,53 +127,7 @@ $(document).ready(function () {
     })
   })
 
-  var screenWidth = $(window).width()
-
-  if (screenWidth <= 1024) {
-    $('#milestone_core_mobile').attr(
-      'src',
-      'assets/images/milestone/milestone_core_mobile.png'
-    )
-    $('#milestone_bg').attr(
-      'src',
-      'assets/images/milestone/milestone_mobile_bg.png'
-    )
-
-    $('#milestone_core_bg').attr(
-      'src',
-      'assets/images/milestone/milestone_core-bg_mobile.png'
-    )
-
-    $('#mtf_token').attr('src', 'assets/images/token/mtf_token_mb.png')
-    $('#avalanche').attr('src', 'assets/images/supportchain/avalanche_mb.png')
-    $('#iw-roadmap-inner').addClass('container')
-    $('#iw-supported-wrap').addClass('container')
-    $('#iw-token-ifw-wrap').addClass('container')
-    $('#iw-token-mtf-wrap').addClass('container')
-    $('#iw-game-economy-wrap').addClass('container')
-  }
-
-  if (screenWidth > 1024) {
-    $('.advisors-slide').slick({
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      dots: false,
-      arrows: true
-    })
-  }
-
-  if (screenWidth <= 475) {
-    $('#bg-banner').before(
-      '<img src="assets/images/bg_mobile_behind.png" alt="" class="bg_mobile_behind"/>'
-    )
-    $('#bg-banner').after(
-      '<img src="assets/images/banner_moblie_shadow.png" alt="" class="bg_mobile_shadow"/>'
-    )
-    $('#bg-banner img').attr('src', 'assets/images/bg_mobile.png')
-    $('#bg-banner').css('z-index', '1')
-
-    $('#lands-bg').attr('src', 'assets/images/land/land_bg_mobile.png')
-  }
+  setResponsive()
 
   $('.iw-news-slider').slick({
     infinite: false,

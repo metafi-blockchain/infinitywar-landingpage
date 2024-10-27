@@ -40,11 +40,8 @@
     display: flex;
     align-items: center;
     gap: 48px;
-
     padding: 0 42px 42px;
-
     position: relative;
-
     overflow: hidden;
     clip-path: polygon(
       50px 0%,
@@ -55,7 +52,6 @@
       0% 54px
     );
     border: 1px solid #46b0ee;
-
     &::after,
     &::before {
       content: '';
@@ -78,6 +74,11 @@
 
     @media (max-width: 1919px) {
       padding: 20px 42px;
+    }
+
+    @media (max-width: 1299px) {
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     @media (max-width: 1024px) {
@@ -162,6 +163,9 @@
     gap: 9px;
     padding: 5.5px 0;
     width: 25.26vw;
+    @media (max-width: 1299px) {
+      width: 100%;
+    }
 
     cursor: pointer;
     .legend {
