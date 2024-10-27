@@ -42,10 +42,12 @@
   z-index: 1;
 }
 .btn.btn-primary::before {
-  clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
+          clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
 }
 .btn.btn-primary::after {
-  clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
+  -webkit-clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
+          clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
 }
 .btn.btn-primary:hover::after {
   display: none;
@@ -78,10 +80,12 @@
   z-index: 1;
 }
 .iw-btn.btn.btn-warning::before {
-  clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
+          clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
 }
 .iw-btn.btn.btn-warning::after {
-  clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
+  -webkit-clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
+          clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
 }
 .iw-btn.btn.btn-warning:hover {
   color: #dd7041;
@@ -298,10 +302,12 @@
   transition: all ease-in-out 0.3s;
 }
 .iw-header-marketplace::before {
-  clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
+          clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
 }
 .iw-header-marketplace::after {
-  clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
+  -webkit-clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
+          clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
 }
 .iw-header-marketplace img {
   min-width: 100px;
@@ -651,10 +657,12 @@
   z-index: 1;
 }
 .iw-about .contract-address .address-btns .btn.btn-lg.btn-warning::before {
-  clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
+          clip-path: polygon(0 0, 100% 0, 100% 18px, calc(100% - 7px) 26px, 100% 23px, 100% 100%, 48px 100%, 53px calc(100% - 6px), 28px 100%, 0 100%, 0 1px, 1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), 27px calc(100% - 1px), 52px calc(100% - 7px), 47px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) 22px, calc(100% - 8px) 25px, calc(100% - 1px) 17px, calc(100% - 1px) 1px, 1px 1px);
 }
 .iw-about .contract-address .address-btns .btn.btn-lg.btn-warning::after {
-  clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
+  -webkit-clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
+          clip-path: polygon(1px 1px, calc(100% - 1px) 1px, calc(100% - 1px) 17px, calc(100% - 8px) 25px, calc(100% - 1px) 22px, calc(100% - 1px) calc(100% - 1px), 47px calc(100% - 1px), 52px calc(100% - 7px), 27px calc(100% - 1px), 1px calc(100% - 1px));
 }
 .iw-about .contract-address .address-btns .btn.btn-lg.btn-warning:hover {
   color: #cd3e00;
@@ -853,7 +861,8 @@
   padding: 16px 24px;
   position: relative;
   overflow: hidden;
-  clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
+  -webkit-clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
+          clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
   border: 1px solid #46b0ee;
 }
 .iw-top-news-content::before, .iw-top-news-content:after {
@@ -889,7 +898,8 @@
   transform: translate(-50%, -50%);
   width: 97%;
   height: auto;
-  clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
+  -webkit-clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
+          clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
   z-index: -1;
 }
 .iw-top-news-content-left .iw-news-slider {
@@ -961,7 +971,8 @@
   width: 100%;
   height: 100%;
   background-color: #46b0ee;
-  clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px, 1px 10px, 1px calc(100% - 11px), 11px calc(100% - 1px), calc(100% - 10px) calc(100% - 1px), calc(100% - 1px) calc(100% - 10px), calc(100% - 1px) 10px, calc(100% - 10px) 1px, 11px 1px, 1px 11px, 0px 10px);
+  -webkit-clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px, 1px 10px, 1px calc(100% - 11px), 11px calc(100% - 1px), calc(100% - 10px) calc(100% - 1px), calc(100% - 1px) calc(100% - 10px), calc(100% - 1px) 10px, calc(100% - 10px) 1px, 11px 1px, 1px 11px, 0px 10px);
+          clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px, 1px 10px, 1px calc(100% - 11px), 11px calc(100% - 1px), calc(100% - 10px) calc(100% - 1px), calc(100% - 1px) calc(100% - 10px), calc(100% - 1px) 10px, calc(100% - 10px) 1px, 11px 1px, 1px 11px, 0px 10px);
 }
 .iw-top-news-content-right .tabs .tab.warning span {
   background-color: rgba(221, 112, 65, 0.9);
@@ -975,7 +986,8 @@
   width: 100%;
   z-index: 2;
   background-color: rgba(0, 18, 181, 0.431372549);
-  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px);
+  -webkit-clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px);
+          clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px);
 }
 .iw-top-news-content-right .tabs .tab span::before {
   content: "";
@@ -985,7 +997,8 @@
   width: 100%;
   height: 100%;
   background-color: #46b0ee;
-  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px, 1px calc(100% - 9px), 9px calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) 8px, calc(100% - 8px) 1px, 9px 1px, 1px 9px, 0px 8px);
+  -webkit-clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px, 1px calc(100% - 9px), 9px calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) 8px, calc(100% - 8px) 1px, 9px 1px, 1px 9px, 0px 8px);
+          clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px, 1px calc(100% - 9px), 9px calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) 8px, calc(100% - 8px) 1px, 9px 1px, 1px 9px, 0px 8px);
 }
 .iw-top-news-content-right .tabs .tab #news_badge {
   position: absolute;
@@ -1137,7 +1150,8 @@
   content: "";
   bottom: 0;
   right: 0;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   background-color: #cd3e00;
   height: 30px;
   width: 26px;
@@ -1147,7 +1161,8 @@
   content: "";
   bottom: -1px;
   right: -1px;
-  clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 30px) 100%, 0% 100%, 0% 34px);
+  -webkit-clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 30px) 100%, 0% 100%, 0% 34px);
+          clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 30px) 100%, 0% 100%, 0% 34px);
   background-color: #46b0ee;
   height: calc(100% + 2px);
   width: calc(100% + 2px);
@@ -1189,7 +1204,8 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 18, 181, 0.431372549);
-  clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 30px) 100%, 0% 100%, 0% 34px);
+  -webkit-clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 30px) 100%, 0% 100%, 0% 34px);
+          clip-path: polygon(30px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 30px) 100%, 0% 100%, 0% 34px);
   z-index: 0;
 }
 .iw-top-news-addition-item.active::before {
@@ -1343,7 +1359,8 @@
 .iw-footer-join-links a svg {
   max-width: 50px;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .iw-footer-join-links a:hover, .iw-footer-join-links a.active {
   --border-color: #cd3e00;
@@ -1384,6 +1401,9 @@
   border: 0 !important;
   box-shadow: none;
   border-radius: 0;
+}
+.iw-footer-form-control .form-control::-moz-placeholder {
+  color: #969696;
 }
 .iw-footer-form-control .form-control::placeholder {
   color: #969696;
@@ -1599,6 +1619,11 @@
   }
 }
 
+@media (min-width: 1920px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1598px;
+  }
+}
 .mf-btn-s {
   position: relative;
   display: inline-flex;
@@ -1620,7 +1645,8 @@
   width: 100%;
   height: 100%;
   background-color: #46b0ee;
-  clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px, 1px 10px, 1px calc(100% - 11px), 11px calc(100% - 1px), calc(100% - 10px) calc(100% - 1px), calc(100% - 1px) calc(100% - 10px), calc(100% - 1px) 10px, calc(100% - 10px) 1px, 11px 1px, 1px 11px, 0px 10px);
+  -webkit-clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px, 1px 10px, 1px calc(100% - 11px), 11px calc(100% - 1px), calc(100% - 10px) calc(100% - 1px), calc(100% - 1px) calc(100% - 10px), calc(100% - 1px) 10px, calc(100% - 10px) 1px, 11px 1px, 1px 11px, 0px 10px);
+          clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px, 1px 10px, 1px calc(100% - 11px), 11px calc(100% - 1px), calc(100% - 10px) calc(100% - 1px), calc(100% - 1px) calc(100% - 10px), calc(100% - 1px) 10px, calc(100% - 10px) 1px, 11px 1px, 1px 11px, 0px 10px);
 }
 .mf-btn-s.warning span {
   background-color: rgba(221, 112, 65, 0.9);
@@ -1633,7 +1659,8 @@
   position: relative;
   z-index: 2;
   background-color: rgba(0, 18, 181, 0.431372549);
-  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px);
+  -webkit-clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px);
+          clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px);
 }
 .mf-btn-s span::before {
   content: "";
@@ -1643,7 +1670,8 @@
   width: 100%;
   height: 100%;
   background-color: #46b0ee;
-  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px, 1px calc(100% - 9px), 9px calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) 8px, calc(100% - 8px) 1px, 9px 1px, 1px 9px, 0px 8px);
+  -webkit-clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px, 1px calc(100% - 9px), 9px calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) 8px, calc(100% - 8px) 1px, 9px 1px, 1px 9px, 0px 8px);
+          clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 1px 8px, 1px calc(100% - 9px), 9px calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) 8px, calc(100% - 8px) 1px, 9px 1px, 1px 9px, 0px 8px);
 }
 
 .slick-arrow {
@@ -1673,7 +1701,8 @@
 .iw-milestone-bg-image {
   width: 100%;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 0;
 }
 .iw-milestone .iw-section-title {
@@ -2217,13 +2246,16 @@
   margin-bottom: 36px;
   background-color: #46b0ee;
   padding: 3px;
-  clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+  -webkit-clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+          clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 .iw-leadership a .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px);
+          clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px);
 }
 @media (max-width: 1024px) {
   .iw-leadership a .image {
@@ -2344,13 +2376,16 @@
   margin-bottom: 36px;
   background-color: #46b0ee;
   padding: 3px;
-  clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+  -webkit-clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
+          clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px), 0 20px);
 }
 .iw-advisors .advisors-slide a .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px);
+          clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 18px, 100% calc(100% - 18px), calc(100% - 18px) 100%, 18px 100%, 0 calc(100% - 18px), 0 18px);
 }
 .iw-advisors .advisors-slide a .name {
   font-weight: 800;
@@ -2443,7 +2478,8 @@
 .iw-partners .row a img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .iw-news {
@@ -2470,7 +2506,8 @@
 .iw-news .iw-news-slide .slide-item .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transform-origin: center;
   transition: all ease-in-out 0.3s;
 }
@@ -2576,7 +2613,8 @@
 .iw-media .iw-media-slide .slide-item img {
   width: 100%;
   height: 100%;
-  clip-path: polygon(55px 0, 100% 0, 100% calc(100% - 70px), calc(100% - 55px) 100%, 0 100%, 0 70px);
+  -webkit-clip-path: polygon(55px 0, 100% 0, 100% calc(100% - 70px), calc(100% - 55px) 100%, 0 100%, 0 70px);
+          clip-path: polygon(55px 0, 100% 0, 100% calc(100% - 70px), calc(100% - 55px) 100%, 0 100%, 0 70px);
 }
 .iw-media .iw-media-slide-nav {
   width: 1026px;
@@ -2854,6 +2892,7 @@
 }
 .iw-bruce-content-title {
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .iw-bruce-content-title img {
@@ -2884,6 +2923,7 @@
 }
 .iw-bruce-content-desc {
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .iw-bruce-content-desc img {
@@ -2919,6 +2959,343 @@
 .iw-bruce-content-actor img {
   width: 29.63vw;
   height: auto;
+}
+
+.iw-bruce-2 {
+  margin-top: 179px;
+  padding-top: 80px;
+  position: relative;
+  background-image: url(../images/background/bruce.png);
+  background-size: cover;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 {
+    padding-top: 30px;
+    margin-top: 20px;
+  }
+}
+.iw-bruce-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/background/bruce-border.png);
+  background-size: 100% 100%;
+}
+.iw-bruce-2 .pick {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (max-width: 1199px) {
+  .iw-bruce-2 .pick {
+    right: -20px;
+  }
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .pick {
+    position: relative;
+    top: 0;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.iw-bruce-2 .pick button {
+  display: block;
+  margin-bottom: 10px;
+  background-color: transparent;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+.iw-bruce-2 .pick button:first-child, .iw-bruce-2 .pick button:last-child {
+  margin-right: -52px;
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .pick button:first-child, .iw-bruce-2 .pick button:last-child {
+    margin: 0;
+  }
+}
+.iw-bruce-2 .pick button:hover {
+  opacity: 0.8;
+}
+.iw-bruce-2 .pick button.active {
+  opacity: 1 !important;
+}
+.iw-bruce-2 .pick button:hover img, .iw-bruce-2 .pick button.active img {
+  transform: translateX(-20px);
+}
+.iw-bruce-2 .pick button img {
+  height: 68px;
+  transition: all ease-in-out 0.3s;
+}
+@media (max-width: 1199px) {
+  .iw-bruce-2 .pick button img {
+    height: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .pick button img {
+    height: 27px;
+    transform: none !important;
+  }
+}
+.iw-bruce-2 .iw-section-title {
+  margin-bottom: 50px;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .iw-bruce-2 .iw-section-title {
+    margin-bottom: 30px;
+  }
+}
+.iw-bruce-2 .inner {
+  position: relative;
+}
+.iw-bruce-2 .inner .box-title {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .inner .box-title {
+    text-align: right;
+    width: 261px;
+    background-image: url(../images/bruce/bruce_frame_title-mb.png);
+    background-size: cover;
+    background-position: top right;
+    margin-left: auto;
+  }
+}
+@media (max-width: 1919px) {
+  .iw-bruce-2 .inner .box-title img {
+    height: 150px;
+  }
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .inner .box-title img {
+    height: 64px;
+    visibility: hidden;
+  }
+}
+.iw-bruce-2 .inner .box-title span {
+  position: absolute;
+  left: 150px;
+  top: 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 13px #003e5f;
+}
+@media (max-width: 1919px) {
+  .iw-bruce-2 .inner .box-title span {
+    font-size: 36px;
+    top: 12px;
+    left: 120px;
+  }
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .inner .box-title span {
+    font-size: 16px;
+    line-height: 19px;
+    left: auto;
+    right: 150px;
+    top: 15px;
+  }
+}
+.iw-bruce-2 .inner .box-text {
+  margin-top: -50px;
+  background-image: url(../images/background/bruce-box-text.png);
+  background-size: 100% 100%;
+  padding: 58px 49px 47px 52px;
+  margin-bottom: 53px;
+}
+@media (max-width: 1919px) {
+  .iw-bruce-2 .inner .box-text {
+    padding: 32px;
+    margin-top: -70px;
+  }
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .inner .box-text {
+    margin-top: -6px;
+    padding: 26px 28px 31px 27px;
+  }
+}
+.iw-bruce-2 .inner .box-text p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+@media (max-width: 1919px) {
+  .iw-bruce-2 .inner .box-text p {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+  }
+}
+.iw-bruce-2 .inner .box-text .info {
+  display: flex;
+}
+.iw-bruce-2 .inner .box-text .info .icon {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  overflow: hidden;
+}
+.iw-bruce-2 .inner .box-text .info .icon img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.iw-bruce-2 .inner .box-text .info .points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
+  flex: 1;
+}
+.iw-bruce-2 .inner .box-text .info .points .point {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.iw-bruce-2 .inner .box-text .info .points .point span {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.iw-bruce-2 .inner .box-text .info .points .point span:first-child {
+  width: 35px;
+}
+.iw-bruce-2 .inner .box-text .info .points .point span:last-child {
+  width: 73px;
+}
+.iw-bruce-2 .inner .box-text .info .points .point .progress {
+  flex: 1;
+  margin: 0;
+  height: 13px;
+  background: rgba(0, 18, 181, 0.43);
+  border-radius: 0;
+}
+.iw-bruce-2 .inner .box-text .info .points .point .progress .progress-bar {
+  background: #46b0ee;
+  border-radius: 0;
+}
+.iw-bruce-2 .inner .box-slide {
+  margin: 0 37px;
+  position: relative;
+  margin-bottom: 77px;
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .inner .box-slide {
+    width: calc(100% - 150px);
+    margin: 0px auto 42px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+  }
+}
+@media (max-width: 767px) {
+  .iw-bruce-2 .inner .box-slide {
+    width: calc(100% - 120px);
+  }
+}
+.iw-bruce-2 .inner .box-slide .slick-arrow {
+  position: absolute;
+  width: 37px;
+  height: 45px;
+}
+.iw-bruce-2 .inner .box-slide .slick-arrow.slick-prev {
+  background-image: url(../images/icons/bruce-prev.svg);
+  left: -46px;
+}
+.iw-bruce-2 .inner .box-slide .slick-arrow.slick-next {
+  background-image: url(../images/icons/bruce-next.svg);
+  right: -46px;
+}
+.iw-bruce-2 .inner .box-slide::before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -22px;
+  width: calc(100% + 44px);
+  height: calc(100% + 22px);
+  background-image: url(../images/bruce/bruce-slide-bg.png);
+  background-size: 100% 100%;
+}
+@media (max-width: 767px) {
+  .iw-bruce-2 .inner .box-slide::before {
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+  }
+}
+.iw-bruce-2 .inner .box-slide .item {
+  background-image: url(../images/bruce-slide-bg.png);
+  background-size: 100% 100%;
+  padding: 13px 16px 18px 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .inner .box-slide .item {
+    padding: 5px;
+  }
+}
+.iw-bruce-2 .inner .box-slide .item img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.iw-bruce-2 .inner .image {
+  width: calc(100% + 150px);
+  margin-left: -150px;
+  margin-top: -150px;
+}
+@media (max-width: 1199px) {
+  .iw-bruce-2 .inner .image {
+    width: calc(100% + 400px);
+    margin-top: -200px;
+    margin-right: -200px;
+  }
+}
+@media (max-width: 991px) {
+  .iw-bruce-2 .inner .image {
+    margin-top: -130px;
+  }
+}
+@media (max-width: 767px) {
+  .iw-bruce-2 .inner .image {
+    width: 130%;
+    margin-right: 0%;
+    margin-left: 0;
+    margin-top: -100px;
+  }
 }
 
 .iw-land {
@@ -3041,7 +3418,8 @@
   padding: 0 42px 42px;
   position: relative;
   overflow: hidden;
-  clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
+  -webkit-clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
+          clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
   border: 1px solid #46b0ee;
 }
 .iw-game-economy-wrap::after, .iw-game-economy-wrap::before {
@@ -3590,6 +3968,12 @@
   text-align: left;
   color: #46b0ee;
 }
+@media (max-width: 1919px) {
+  .iw-supportchains-spec-line .first-item {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
 @media (max-width: 1024px) {
   .iw-supportchains-spec-line {
     gap: 10px;
@@ -3626,7 +4010,8 @@
   background-color: rgba(56, 141, 224, 0.1019607843);
   position: relative;
   overflow: hidden;
-  clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
+  -webkit-clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
+          clip-path: polygon(50px 0%, 100% 0%, 100% calc(100% - 54px), calc(100% - 50px) 100%, 0% 100%, 0% 54px);
   border: 1px solid #46b0ee;
 }
 .iw-supportchains-right::before {
@@ -3665,7 +4050,8 @@
 @media (max-width: 475px) {
   .iw-supportchains-right {
     padding: 10px 16px;
-    clip-path: polygon(32px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 32px) 100%, 0% 100%, 0% 34px);
+    -webkit-clip-path: polygon(32px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 32px) 100%, 0% 100%, 0% 34px);
+            clip-path: polygon(32px 0%, 100% 0%, 100% calc(100% - 34px), calc(100% - 32px) 100%, 0% 100%, 0% 34px);
   }
   .iw-supportchains-right::before {
     bottom: -68px;
@@ -3753,6 +4139,4 @@
   .iw-gameplay {
     padding-top: 60px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

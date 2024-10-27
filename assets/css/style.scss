@@ -2040,7 +2040,11 @@ $color-highlight2: #dd7041;
     }
   }
 }
-
+@media (min-width: 1920px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1598px;
+  }
+}
 @import './button';
 @import './slick';
 @import './milestone';
@@ -2054,6 +2058,7 @@ $color-highlight2: #dd7041;
 @import './faqs';
 @import'./infinity-war';
 @import './bruce';
+@import './bruce-2';
 @import './land';
 @import './game-economy';
 @import './token';

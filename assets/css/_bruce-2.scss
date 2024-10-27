@@ -1,0 +1,296 @@
+.iw-bruce-2 {
+  margin-top: 179px;
+  padding-top: 80px;
+  position: relative;
+  background-image: url(../images/background/bruce.png);
+  background-size: cover;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    padding-top: 30px;
+    margin-top: 20px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background/bruce-border.png);
+    background-size: 100% 100%;
+  }
+  .pick {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: 1199px) {
+      right: -20px;
+    }
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0;
+      transform: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    button {
+      display: block;
+      margin-bottom: 10px;
+      background-color: transparent;
+      padding: 0;
+      outline: 0;
+      border: 0;
+      &:first-child,
+      &:last-child {
+        margin-right: -52px;
+        @media (max-width: 991px) {
+          margin: 0;
+        }
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+      &.active {
+        opacity: 1 !important;
+      }
+      &:hover,
+      &.active {
+        img {
+          transform: translateX(-20px);
+        }
+      }
+      img {
+        height: 68px;
+        transition: all ease-in-out 0.3s;
+        @media (max-width: 1199px) {
+          height: 50px;
+        }
+        @media (max-width: 991px) {
+          height: 27px;
+          transform: none !important;
+        }
+      }
+    }
+  }
+  .iw-section-title {
+    margin-bottom: 50px;
+    position: relative;
+    @media (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+  }
+  .inner {
+    position: relative;
+    .box-title {
+      position: relative;
+      @media (max-width: 991px) {
+        text-align: right;
+        width: 261px;
+        background-image: url(../images/bruce/bruce_frame_title-mb.png);
+        background-size: cover;
+        background-position: top right;
+        margin-left: auto;
+      }
+      img {
+        @media (max-width: 1919px) {
+          height: 150px;
+        }
+        @media (max-width: 991px) {
+          height: 64px;
+          visibility: hidden;
+        }
+      }
+      span {
+        position: absolute;
+        left: 150px;
+        top: 24px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-shadow: 0px 0px 13px #003e5f;
+        @media (max-width: 1919px) {
+          font-size: 36px;
+          top: 12px;
+          left: 120px;
+        }
+        @media (max-width: 991px) {
+          font-size: 16px;
+          line-height: 19px;
+          left: auto;
+          right: 150px;
+          top: 15px;
+        }
+      }
+    }
+    .box-text {
+      margin-top: -50px;
+      background-image: url(../images/background/bruce-box-text.png);
+      background-size: 100% 100%;
+      padding: 58px 49px 47px 52px;
+      margin-bottom: 53px;
+      @media (max-width: 1919px) {
+        padding: 32px;
+        margin-top: -70px;
+      }
+      @media (max-width: 991px) {
+        margin-top: -6px;
+        padding: 26px 28px 31px 27px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 29px;
+        color: #ffffff;
+        margin-bottom: 32px;
+        @media (max-width: 1919px) {
+          font-size: 20px;
+          line-height: 1.3;
+          margin-bottom: 24px;
+        }
+      }
+      .info {
+        display: flex;
+        .icon {
+          width: 100px;
+          height: 100px;
+          min-width: 100px;
+          overflow: hidden;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+          }
+        }
+        .points {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 9px;
+          flex: 1;
+          .point {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            span {
+              display: inline-flex;
+              align-items: center;
+              white-space: nowrap;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              color: #ffffff;
+              &:first-child {
+                width: 35px;
+              }
+              &:last-child {
+                width: 73px;
+              }
+            }
+            .progress {
+              flex: 1;
+              margin: 0;
+              height: 13px;
+              background: rgba(0, 18, 181, 0.43);
+              border-radius: 0;
+              .progress-bar {
+                background: #46b0ee;
+                border-radius: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .box-slide {
+      margin: 0 37px;
+      position: relative;
+      margin-bottom: 77px;
+      @media (max-width: 991px) {
+        width: calc(100% - 150px);
+        margin: 0px auto 42px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 4;
+      }
+      @media (max-width: 767px) {
+        width: calc(100% - 120px);
+      }
+      .slick-arrow {
+        position: absolute;
+        width: 37px;
+        height: 45px;
+        &.slick-prev {
+          background-image: url(../images/icons/bruce-prev.svg);
+          left: -46px;
+        }
+        &.slick-next {
+          background-image: url(../images/icons/bruce-next.svg);
+          right: -46px;
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: -11px;
+        left: -22px;
+        width: calc(100% + 44px);
+        height: calc(100% + 22px);
+        background-image: url(../images/bruce/bruce-slide-bg.png);
+        background-size: 100% 100%;
+        @media (max-width: 767px) {
+          width: calc(100% + 10px);
+          height: calc(100% + 10px);
+          top: -5px;
+          left: -5px;
+        }
+      }
+      .item {
+        background-image: url(../images/bruce-slide-bg.png);
+        background-size: 100% 100%;
+        padding: 13px 16px 18px 15px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        @media (max-width: 991px) {
+          padding: 5px;
+        }
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .image {
+      width: calc(100% + 150px);
+      margin-left: -150px;
+      margin-top: -150px;
+      @media (max-width: 1199px) {
+        width: calc(100% + 400px);
+        margin-top: -200px;
+        margin-right: -200px;
+      }
+      @media (max-width: 991px) {
+        margin-top: -130px;
+      }
+      @media (max-width: 767px) {
+        width: 130%;
+        margin-right: 0%;
+        margin-left: 0;
+        margin-top: -100px;
+      }
+    }
+  }
+}

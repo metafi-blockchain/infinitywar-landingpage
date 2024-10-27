@@ -109,7 +109,6 @@ $(document).ready(function () {
       'assets/images/milestone/milestone_core-bg_mobile.png'
     )
 
-    $('#bruce-bg').attr('src', 'assets/images/bruce/bruce_bg_mb.png')
     $('#mtf_token').attr('src', 'assets/images/token/mtf_token_mb.png')
     $('#avalanche').attr('src', 'assets/images/supportchain/avalanche_mb.png')
     $('#iw-roadmap-inner').addClass('container')
@@ -246,5 +245,12 @@ $(document).ready(function () {
         }
       }
     ]
+  })
+
+  $('.bruce-box-slide').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: false,
+    arrows: true
   })
 })
