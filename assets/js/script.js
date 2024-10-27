@@ -49,7 +49,7 @@ function setResponsive() {
     })
   }
 }
-window.on('resize', () => {
+$(window).on('resize', () => {
   setResponsive()
 })
 $(document).ready(function () {
@@ -145,17 +145,11 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          arrows: true
         }
       }
       // You can unslick at a given breakpoint now by adding:
