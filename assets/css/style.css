@@ -2968,6 +2968,12 @@
   background-image: url(../images/background/bruce.png);
   background-size: cover;
   overflow: hidden;
+  min-height: 915px;
+}
+@media (max-width: 1199px) {
+  .iw-bruce-2 {
+    min-height: 800px;
+  }
 }
 @media (max-width: 991px) {
   .iw-bruce-2 {
@@ -3090,7 +3096,7 @@
 }
 .iw-bruce-2 .inner .box-title span {
   position: absolute;
-  left: 150px;
+  left: 50px;
   top: 24px;
   font-weight: 700;
   font-size: 48px;
@@ -3098,20 +3104,23 @@
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 0px 13px #003e5f;
+  width: 360px;
+  text-align: center;
 }
 @media (max-width: 1919px) {
   .iw-bruce-2 .inner .box-title span {
+    width: 250px;
     font-size: 36px;
     top: 12px;
-    left: 120px;
   }
 }
 @media (max-width: 991px) {
   .iw-bruce-2 .inner .box-title span {
+    width: 120px;
     font-size: 16px;
     line-height: 19px;
     left: auto;
-    right: 150px;
+    right: 120px;
     top: 15px;
   }
 }
@@ -3135,6 +3144,7 @@
   }
 }
 .iw-bruce-2 .inner .box-text p {
+  min-height: 130px;
   font-weight: 500;
   font-size: 25px;
   line-height: 29px;
@@ -3254,6 +3264,7 @@
   }
 }
 .iw-bruce-2 .inner .box-slide .item {
+  cursor: pointer;
   background-image: url(../images/bruce-slide-bg.png);
   background-size: 100% 100%;
   padding: 13px 16px 18px 15px;
@@ -3266,11 +3277,16 @@
     padding: 5px;
   }
 }
+.iw-bruce-2 .inner .box-slide .item.slick-current img {
+  filter: grayscale(0);
+}
 .iw-bruce-2 .inner .box-slide .item img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: all ease-in-out 0.3s;
+  filter: grayscale(0.7);
 }
 .iw-bruce-2 .inner .image {
   width: calc(100% + 150px);

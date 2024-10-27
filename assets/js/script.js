@@ -249,8 +249,100 @@ $(document).ready(function () {
 
   $('.bruce-box-slide').slick({
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     dots: false,
     arrows: true
   })
+})
+const BRUCE_ITEMS = [
+  {
+    background: '/assets/images/background/bruce.png',
+    image: '/assets/images/bruce-img-1.png',
+    title: 'Winston',
+    description:
+      'Adam is one of the youngest successors to the Pacific shipping corporation, while his peers are enjoying themselves, Adam chooses to equip the fleet and become the king of ocean shipping.',
+    ada: '/assets/images/Ada-1.png',
+    stats: {
+      atk: [289, 650],
+      def: [148, 300],
+      cmd: [320, 600]
+    }
+  },
+  {
+    background: '/assets/images/background/bruce.png',
+    image: '/assets/images/bruce-img-2.png',
+    title: 'CORNELIA',
+    description:
+      'Allied naval alliances need excellent naval generals, Ada graduated from the naval academy excellently, joined the army, and captained a new rocket cruiser.',
+    ada: '/assets/images/Ada-2.png',
+    stats: {
+      atk: [300, 650],
+      def: [150, 300],
+      cmd: [500, 600]
+    }
+  },
+  {
+    background: '/assets/images/background/bruce.png',
+    image: '/assets/images/bruce-img-3.png',
+    title: 'Bruce',
+    description: `Once a Confederate Army combat commander, with painful memories of the war, George returned to the Confederate Academy to work as a teacher. The rookies who have undergone George's training immediately call him ""The Devil's Teacher`,
+    ada: '/assets/images/Ada-3.png',
+    stats: {
+      atk: [452, 650],
+      def: [148, 300],
+      cmd: [400, 600]
+    }
+  },
+  {
+    background: '/assets/images/background/bruce-4.png',
+    image: '/assets/images/bruce-img-4.png',
+    title: 'NATASHA',
+    description: `Once a Confederate Army combat commander, with painful memories of the war, George returned to the Confederate Academy to work as a teacher. The rookies who have undergone George's training immediately call him ""The Devil's Teacher`,
+    ada: '/assets/images/Ada-4.png',
+    stats: {
+      atk: [372, 650],
+      def: [228, 300],
+      cmd: [267, 600]
+    }
+  },
+  {
+    background: '/assets/images/background/bruce-5.png',
+    image: '/assets/images/bruce-img-5.png',
+    title: 'ADAM',
+    description: `Once a Confederate Army combat commander, with painful memories of the war, George returned to the Confederate Academy to work as a teacher. The rookies who have undergone George's training immediately call him ""The Devil's Teacher`,
+    ada: '/assets/images/Ada-5.png',
+    stats: {
+      atk: [228, 650],
+      def: [172, 300],
+      cmd: [500, 600]
+    }
+  }
+]
+function setBruceSlideByIndex(slideIndex) {
+  const activeSlide = BRUCE_ITEMS[slideIndex]
+  $('.iw-bruce-2').css('background-image', `url('${activeSlide.background}')`)
+  $('.iw-bruce-2 .image').attr('src', activeSlide.image)
+  $('.iw-bruce-2 .iw-section-title span').text(activeSlide.title)
+  $('.iw-bruce-2 .box-title span').text(activeSlide.title)
+  $('.iw-bruce-2 .box-text p').text(activeSlide.description)
+  $('.iw-bruce-2 .icon img').attr('src', activeSlide.ada)
+  $('.iw-bruce-2 .points .point:nth-child(1) span:last-child()').text(
+    `${activeSlide.stats.atk[0]}/${activeSlide.stats.atk[1]}`
+  )
+  $('.iw-bruce-2 .points .point:nth-child(2) span:last-child()').text(
+    `${activeSlide.stats.def[0]}/${activeSlide.stats.def[1]}`
+  )
+  $('.iw-bruce-2 .points .point:nth-child(3) span:last-child()').text(
+    `${activeSlide.stats.cmd[0]}/${activeSlide.stats.cmd[1]}`
+  )
+}
+$('.bruce-box-slide').on(
+  'beforeChange',
+  function (_event, _slick, _currentSlide, nextSlide) {
+    setBruceSlideByIndex(nextSlide)
+  }
+)
+$('.bruce-box-slide .item').on('click', function () {
+  const slideIndex = $(this).data('slide')
+  $('.bruce-box-slide').slick('slickGoTo', slideIndex)
 })
