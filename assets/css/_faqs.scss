@@ -83,6 +83,9 @@
       line-height: 23px;
       color: #ffffff;
       position: relative;
+      @media(max-width:767px){
+        padding: 16px 12px 42px;
+      }
       &::before,
       &::after {
         width: 20%;
@@ -91,6 +94,9 @@
         position: absolute;
         bottom: 0;
         border-bottom: 1px solid #46b0ee;
+        @media(max-width:767px){
+          display: none;
+        }
       }
       &::before {
         left: 0;
