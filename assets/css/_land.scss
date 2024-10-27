@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 117px;
   margin-top: -117px;
+  overflow: hidden;
   @media (max-width: 991px) {
     height: 943px;
     background-image: url(../images/background/lands-mb.png);

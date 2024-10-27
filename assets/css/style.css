@@ -408,7 +408,7 @@
   .iw-banner-inner {
     position: relative !important;
     top: 0 !important;
-    margin-top: -250px;
+    margin-top: -150px;
   }
 }
 .iw-banner-inner button {
@@ -3048,6 +3048,11 @@
   outline: 0;
   border: 0;
 }
+@media (max-width: 991px) {
+  .iw-bruce-2 .pick button {
+    margin-bottom: 0;
+  }
+}
 .iw-bruce-2 .pick button:first-child, .iw-bruce-2 .pick button:last-child {
   margin-right: -52px;
 }
@@ -3343,6 +3348,7 @@
   position: relative;
   padding-top: 117px;
   margin-top: -117px;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .iw-land {
@@ -3713,6 +3719,7 @@
 }
 .iw-token.ifw-section {
   margin-bottom: 130px;
+  overflow: hidden;
 }
 .iw-token.ifw-section .iw-token-container {
   position: relative;
