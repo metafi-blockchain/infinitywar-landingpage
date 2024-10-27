@@ -5,10 +5,6 @@
   background-image: url(../images/background/bruce.png);
   background-size: cover;
   overflow: hidden;
-  min-height: 915px;
-  @media (max-width: 1199px) {
-    min-height: 800px;
-  }
   @media (max-width: 991px) {
     padding-top: 30px;
     margin-top: 20px;
@@ -22,13 +18,25 @@
     height: 100%;
     background-image: url(../images/background/bruce-border.png);
     background-size: 100% 100%;
+    z-index: 1;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background/bruce.png);
+    background-size: cover;
+    z-index: -1;
   }
   .pick {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    z-index: 2;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -87,12 +95,14 @@
   .iw-section-title {
     margin-bottom: 50px;
     position: relative;
+    z-index: 2;
     @media (max-width: 1199px) {
       margin-bottom: 30px;
     }
   }
   .inner {
     position: relative;
+    z-index: 2;
     .box-title {
       position: relative;
       @media (max-width: 991px) {
@@ -140,6 +150,7 @@
       }
     }
     .box-text {
+      position: relative;
       margin-top: -50px;
       background-image: url(../images/background/bruce-box-text.png);
       background-size: 100% 100%;

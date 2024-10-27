@@ -2,6 +2,16 @@
   position: relative;
   padding-top: 117px;
   margin-top: -117px;
+  @media (max-width: 991px) {
+    height: 943px;
+    background-image: url(../images/background/lands-mb.png);
+    background-size: 100% 100%;
+    margin-top: 0;
+    padding-top: 0;
+    > img {
+      display: none;
+    }
+  }
   .inner {
     position: absolute;
     top: 0;
@@ -10,6 +20,9 @@
     // padding-top: 244px;
     padding-top: 170px;
     height: 100%;
+    @media (max-width: 991px) {
+      padding-top: 30px;
+    }
   }
   .container {
     height: 100%;
@@ -18,11 +31,27 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    .content {
+      @media (max-width: 991px) {
+        padding-top: 420px;
+        padding-bottom: 106px;
+        height: calc(100% - 100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
     .iw-section-title {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+      @media (max-width: 991px) {
+        img {
+          display: inline-flex;
+        }
+      }
     }
     h3 {
       font-weight: 700;
@@ -37,6 +66,24 @@
       margin-bottom: 45px;
       width: 631px;
       max-width: 100%;
+      @media (max-width: 991px) {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        width: 267px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media (max-width: 991px) {
+      .iw-btn.btn.btn-warning {
+        display: inline-flex;
+        height: 62px;
+        min-height: 62px;
+        font-size: 20px;
+        line-height: 23px;
+      }
     }
     .iw-btn.btn.btn-warning::before,
     .iw-btn.btn.btn-warning::after {
@@ -44,33 +91,6 @@
     }
     .iw-btn.btn.btn-warning:hover {
       color: #cd3e00;
-    }
-
-    @media (max-width: 1024px) {
-      h3 {
-        font-size: 48px;
-        font-weight: 700;
-        text-align: center;
-        max-width: 64.68vw;
-      }
-    }
-
-    @media (max-width: 475px) {
-      .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 30%;
-      }
-
-      h3 {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 35.16px;
-        text-align: center;
-        max-width: 64.68vw;
-      }
     }
   }
 }
