@@ -3,9 +3,17 @@
   overflow: hidden;
   background-image: url(../images/background/advisors.png);
   background-size: cover;
+  @media (max-width: 767px) {
+    overflow: hidden;
+  }
   .iw-section-title {
     margin-bottom: 23px;
     white-space: nowrap;
+    @media (max-width: 767px) {
+      img {
+        display: block;
+      }
+    }
   }
   .advisors-slide {
     a {

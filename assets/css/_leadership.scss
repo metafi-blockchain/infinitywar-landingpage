@@ -3,9 +3,18 @@
   overflow: hidden;
   background-image: url(../images/background/leadership.png);
   background-size: cover;
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    overflow: hidden;
+  }
   .iw-section-title {
     margin-bottom: 32px;
     white-space: nowrap;
+    @media (max-width: 767px) {
+      img{
+        display: block;
+      }
+    }
   }
   .leadership-slide {
     margin-left: -20px;
