@@ -26,7 +26,7 @@
     display: flex;
     justify-content: center;
     @media (max-width: 1199px) {
-      position: relative;
+      position: absolute;
       margin-top: -500px;
     }
     @media (max-width: 991px) {
@@ -101,22 +101,47 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: 7.3vw;
 
         h3 {
-          font-size: 3.1vw;
+          font-size: 60px;
           font-weight: 600;
           line-height: normal;
           letter-spacing: -0.01em;
+          text-align: left;
+
           color: #dd7041;
           margin: 0;
+
+          @media (max-width: 767px) {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.01em;
+            text-align: left;
+          }
         }
 
         span {
-          font-size: 1.1vw;
+          font-size: 20px;
           font-weight: 700;
           line-height: normal;
           text-align: center;
+          display: block;
+          width: 100%;
+
+          @media (max-width: 1024px) {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 10px;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+          }
         }
       }
       .vector {

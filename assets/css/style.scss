@@ -1708,7 +1708,7 @@ $color-highlight2: #dd7041;
             border-bottom: none;
             height: 25px;
             top: -25px;
-            left: 31.5%;
+            left: 30.5%;
           }
         }
         &:nth-child(2) {
@@ -1717,7 +1717,7 @@ $color-highlight2: #dd7041;
             position: absolute;
             height: 25px;
             top: -25px;
-            right: 31.5%;
+            right: 30.5%;
             background-color: inherit;
             border-right: 1px solid #46b0ee;
             width: 15%;
@@ -1751,6 +1751,31 @@ $color-highlight2: #dd7041;
       }
       img {
         width: 100%;
+      }
+    }
+
+    &-addition {
+      &-item {
+        &:nth-child(1) {
+          &::after {
+            border-bottom: none;
+            height: 25px;
+            top: -25px;
+            left: 31.5%;
+          }
+        }
+        &:nth-child(2) {
+          &::after {
+            content: '';
+            position: absolute;
+            height: 25px;
+            top: -25px;
+            right: 31.5%;
+            background-color: inherit;
+            border-right: 1px solid #46b0ee;
+            width: 15%;
+          }
+        }
       }
     }
   }

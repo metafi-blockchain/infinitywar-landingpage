@@ -39,7 +39,7 @@ function setResponsive() {
     $('#iw-supported-wrap').addClass('container')
     $('#iw-token-ifw-wrap').addClass('container')
     $('#iw-token-mtf-wrap').addClass('container')
-    $('#iw-game-economy-wrap').addClass('container')
+    $('#iw-game-economy-wrap').addClass('container');
   } else {
     $('.advisors-slide').slick({
       slidesToShow: 4,
@@ -47,6 +47,15 @@ function setResponsive() {
       dots: false,
       arrows: true
     })
+
+    $('.iw-news-slide').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      dots: false,
+      arrows: true
+    })
+
+
   }
 }
 $(window).on('resize', () => {
@@ -176,13 +185,6 @@ $(document).ready(function () {
     focusOnSelect: true
   })
 
-  $('.iw-news-slide').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: false,
-    arrows: true
-  })
-
   $('.leadership-slide').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -229,7 +231,7 @@ $(document).ready(function () {
       }
     ]
   })
-
+  
   $('.bruce-box-slide').slick({
     slidesToShow: 3,
     slidesToScroll: 1,

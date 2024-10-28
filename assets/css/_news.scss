@@ -59,5 +59,11 @@
         }
       }
     }
+
+    @media (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }
