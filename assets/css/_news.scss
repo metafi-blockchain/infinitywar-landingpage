@@ -3,17 +3,30 @@
   overflow: hidden;
   background-image: url(../images/background/news.png);
   background-size: cover;
+  @media (max-width: 767px) {
+    padding-top: 70px;
+    overflow: hidden;
+  }
   .iw-section-title {
     margin-bottom: 40px;
     white-space: nowrap;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
   .iw-news-slide {
     .slide-item {
       margin: 0 15px;
+      @media (max-width: 767px) {
+        margin: 0;
+      }
       .image {
         display: block;
         height: 300px;
         overflow: hidden;
+        @media (max-width: 767px) {
+          height: 250px;
+        }
         &:hover {
           img {
             transform: scale(1.05);
@@ -30,6 +43,9 @@
       .info {
         padding: 23px 30px 20px 30px;
         background: #4c9be833;
+        @media (max-width: 767px) {
+          padding: 12px 20px;
+        }
         .tags {
           margin-bottom: 10px;
           font-weight: 400;
@@ -64,6 +80,9 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+    }
+    @media (max-width: 767px) {
+      gap: 27px;
     }
   }
 }

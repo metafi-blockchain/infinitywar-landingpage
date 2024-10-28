@@ -1783,6 +1783,9 @@ $color-highlight2: #dd7041;
 
 .iw-footer {
   padding-top: 39px;
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
   .mobile-logo {
     display: none;
   }
@@ -1922,6 +1925,11 @@ $color-highlight2: #dd7041;
         background-color: #0012b56e !important;
         --border-color: #0348af;
         @include border(40px, 14px);
+        @media (max-width: 576px) {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 7px;
+        }
         &:hover {
           background-color: #1e49c1a4 !important;
           --border-color: #4e5fff;
@@ -1951,8 +1959,18 @@ $color-highlight2: #dd7041;
       padding: 0;
       margin: 0;
       margin-bottom: 78px;
+      @media (max-width: 576px) {
+        gap: 0;
+      }
       li {
         height: 28px;
+        white-space: nowrap;
+        @media (max-width: 576px) {
+          height: auto;
+          &:not(:last-child){
+            margin-bottom: 12px;
+          }
+        }
         a {
           font-weight: 400;
           font-size: 20px;
@@ -2032,6 +2050,9 @@ $color-highlight2: #dd7041;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width: 576px) {
+          justify-content: flex-start;
+        }
         a {
           font-size: 15px;
           font-weight: 300;
@@ -2057,6 +2078,9 @@ $color-highlight2: #dd7041;
   @media (max-width: 475px) {
     &-join {
       margin-bottom: 20px;
+      @media (max-width: 576px) {
+        margin-bottom: 30px;
+      }
 
       .mobile-logo {
         display: flex;
@@ -2076,12 +2100,18 @@ $color-highlight2: #dd7041;
       &-links {
         flex-direction: column;
         gap: 32px;
+        @media (max-width: 576px) {
+          gap: 20px;
+        }
       }
     }
 
     &-form {
       flex-direction: column;
       margin-bottom: 20px;
+      @media (max-width: 576px) {
+        margin-bottom: 33px;
+      }
       &-group {
         &:last-of-type {
           display: flex;
@@ -2106,6 +2136,9 @@ $color-highlight2: #dd7041;
     }
 
     &-menu {
+      @media (max-width: 576px) {
+        margin-bottom: 33px;
+      }
       ul {
         margin-bottom: 20px;
       }
@@ -2115,6 +2148,9 @@ $color-highlight2: #dd7041;
         font-weight: 500;
         line-height: 21.09px;
         text-align: center;
+        @media (max-width: 576px) {
+          font-size: 15px;
+        }
       }
     }
   }

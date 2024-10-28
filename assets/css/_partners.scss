@@ -6,10 +6,17 @@
   .iw-section-title {
     margin-bottom: 40px;
     white-space: nowrap;
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
   .row {
     --bs-gutter-x: 30px;
     --bs-gutter-y: 30px;
+    @media (max-width: 767px) {
+      --bs-gutter-x: 12px;
+      --bs-gutter-y: 16px;
+    }
     a {
       display: flex;
       justify-content: center;
@@ -30,6 +37,10 @@
       background-size: 1px 30px, 78px 1px;
       background-repeat: no-repeat;
       transition: all ease-in-out 0.3s;
+      @media (max-width: 767px) {
+        height: 56px;
+        padding: 9px 24px;
+      }
       &:hover {
         --border-color: #dd7041;
         &::before {

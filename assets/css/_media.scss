@@ -5,18 +5,95 @@
   background-size: cover;
   padding-bottom: -16px;
   margin-bottom: -16px;
+  @media (max-width: 767px) {
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .iw-section-title {
     margin-bottom: 10px;
+    @media (max-width: 767px) {
+      img {
+        display: block;
+      }
+    }
   }
   .nav-tabs {
     margin-bottom: 26px;
     border: 0;
     gap: 30px;
+    @media (max-width: 767px) {
+      gap: 5px;
+      margin-bottom: 14px;
+    }
     .nav-link {
       border: 0;
       outline: 0;
       box-shadow: none;
       border-radius: 0 !important;
+      @media (max-width: 767px) {
+        font-size: 12px;
+        &::before {
+          clip-path: polygon(
+            5px 0,
+            calc(100% - 5px) 0,
+            100% 5px,
+            100% calc(100% - 5px),
+            calc(100% - 5px) 100%,
+            5px 100%,
+            0 calc(100% - 5px),
+            0 5px,
+            1px 5px,
+            1px calc(100% - 6px),
+            6px calc(100% - 1px),
+            calc(100% - 5px) calc(100% - 1px),
+            calc(100% - 1px) calc(100% - 5px),
+            calc(100% - 1px) 5px,
+            calc(100% - 5px) 1px,
+            6px 1px,
+            1px 6px,
+            0px 5px
+          );
+        }
+        span {
+          padding: 0;
+          width: 96px;
+          height: 27px;
+          clip-path: polygon(
+            4px 0,
+            calc(100% - 4px) 0,
+            100% 4px,
+            100% calc(100% - 4px),
+            calc(100% - 4px) 100%,
+            4px 100%,
+            0 calc(100% - 4px),
+            0 4px,
+            1px 4px
+          );
+          &::before {
+            clip-path: polygon(
+              4px 0,
+              calc(100% - 4px) 0,
+              100% 4px,
+              100% calc(100% - 4px),
+              calc(100% - 4px) 100%,
+              4px 100%,
+              0 calc(100% - 4px),
+              0 4px,
+              1px 4px,
+              1px calc(100% - 5px),
+              5px calc(100% - 1px),
+              calc(100% - 4px) calc(100% - 1px),
+              calc(100% - 1px) calc(100% - 4px),
+              calc(100% - 1px) 4px,
+              calc(100% - 4px) 1px,
+              5px 1px,
+              1px 5px,
+              0px 4px
+            );
+          }
+        }
+      }
       &.active {
         span {
           background-color: rgba($color: #dd7041, $alpha: 0.9);
@@ -26,6 +103,20 @@
   }
   .iw-media-slide {
     margin-bottom: 26px;
+    @media (max-width: 767px) {
+      margin-bottom: 14px;
+      .slick-arrow {
+        width: 16px;
+        height: 20px;
+        background-size: cover;
+        &.slick-prev {
+          left: -8px;
+        }
+        &.slick-next {
+          right: -8px;
+        }
+      }
+    }
     .slide-item.slick-slide {
       transition: transform 0.5s ease;
       position: relative;
@@ -67,6 +158,9 @@
       padding: 18px;
       background-image: url(../images/media-slide-border.svg);
       background-size: 100% 100%;
+      @media (max-width: 576px) {
+        padding: 5px;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -78,6 +172,16 @@
           0 100%,
           0 70px
         );
+        @media (max-width: 576px) {
+          clip-path: polygon(
+            15px 0,
+            100% 0,
+            100% calc(100% - 20px),
+            calc(100% - 15px) 100%,
+            0 100%,
+            0 20px
+          );
+        }
       }
     }
   }
@@ -85,8 +189,14 @@
     width: 1026px;
     max-width: 100%;
     margin: 0 auto;
+    @media (max-width: 767px) {
+      max-width: 80vw;
+    }
     .slide-nav-item {
       padding: 0 9px;
+      @media (max-width: 767px) {
+        padding: 0 2px;
+      }
       img {
         max-width: 100%;
       }
@@ -104,6 +214,10 @@
           background-color: rgba($color: #000000, $alpha: 0.6);
           opacity: 1;
           transition: all ease-in-out 0.3s;
+          @media (max-width: 767px) {
+            width: calc(100% - 4px);
+            left: 2px;
+          }
         }
       }
       &.slick-current {
