@@ -282,6 +282,12 @@ $color-highlight2: #dd7041;
   width: 100vw;
   padding: 20px 0 10px;
   z-index: 999;
+  transition: all ease-in-out .3s;
+  &.sticky{
+    background-color: rgba(20, 22, 38, 0.65);
+    backdrop-filter: blur(4px);
+    padding-top: 10px;
+  }
   &-inner {
     display: flex;
     align-items: center;
@@ -540,6 +546,11 @@ $color-highlight2: #dd7041;
       .menu-toggle {
         display: block;
         z-index: 100;
+        img{
+          width: 24px;
+          height: 22px;
+          margin-right: 5px;
+        }
       }
 
       .iw-header-marketplace {

@@ -60,6 +60,21 @@ $(window).on('resize', () => {
   setResponsive()
 })
 $(document).ready(function () {
+  $(window).scroll(function () {
+    var wScroll = $(this).scrollTop()
+    if (wScroll >= 80) {
+      $('.iw-header').addClass('sticky')
+    } else {
+      $('.iw-header').removeClass('sticky')
+    }
+  })
+
+  if ($(window).scrollTop() >= 80) {
+    $('.iw-header').addClass('sticky')
+  } else {
+    $('.iw-header').removeClass('sticky')
+  }
+
   $('#header-menu-btn').click(function () {
     const buttonToggleSrc = $('#header-menu-btn img').attr('src')
     if (buttonToggleSrc == 'assets/images/icons/menu.svg') {
