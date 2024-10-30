@@ -572,13 +572,13 @@ $color-highlight2: #dd7041;
   @media (max-width: 991px) {
     min-height: 500px;
   }
-  @media (max-width: 428px) {
+  @media (max-width: 475px) {
     min-height: 900px;
   }
   .bg-mobile {
     display: none;
   }
-  @media (max-width: 428px) {
+  @media (max-width: 475px) {
     margin-bottom: -119px;
     .bg-desktop {
       display: none;
@@ -608,7 +608,7 @@ $color-highlight2: #dd7041;
     @media (max-width: 991px) {
       top: 200px !important;
     }
-    @media (max-width: 428px) {
+    @media (max-width: 475px) {
       top: 453px !important;
     }
     button {
