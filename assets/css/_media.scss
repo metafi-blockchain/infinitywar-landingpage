@@ -6,17 +6,11 @@
   padding-bottom: -16px;
   margin-bottom: -16px;
   @media (max-width: 767px) {
-    overflow: hidden;
     margin-bottom: 0;
     padding-bottom: 0;
   }
   .iw-section-title {
     margin-bottom: 10px;
-    @media (max-width: 767px) {
-      img {
-        display: block;
-      }
-    }
   }
   .nav-tabs {
     margin-bottom: 26px;

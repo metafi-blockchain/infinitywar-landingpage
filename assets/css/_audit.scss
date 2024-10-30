@@ -5,16 +5,12 @@
   background-image: url(../images/background/audit.png);
   background-size: cover;
   @media (max-width: 767px) {
-    overflow: hidden;
     padding-top: 0;
   }
   .iw-section-title {
     margin-bottom: 56px;
     @media (max-width: 767px) {
       margin-bottom: 20px;
-      img {
-        display: block;
-      }
     }
   }
   .container > img {

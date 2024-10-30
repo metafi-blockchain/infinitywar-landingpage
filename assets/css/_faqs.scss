@@ -8,15 +8,11 @@
     padding-top: 45px;
     margin-bottom: 0;
     padding-bottom: 60px;
-    overflow: hidden;
   }
   .iw-section-title {
     margin-bottom: 40px;
     @media (max-width: 767px) {
       margin-bottom: 26px;
-      img {
-        display: block;
-      }
     }
   }
   .nav-tabs {

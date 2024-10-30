@@ -3,17 +3,11 @@
   overflow: hidden;
   background-image: url(../images/background/partner.png);
   background-size: cover;
-  @media (max-width: 767px) {
-    overflow: hidden;
-  }
   .iw-section-title {
     margin-bottom: 40px;
     white-space: nowrap;
     @media (max-width: 767px) {
       margin-bottom: 30px;
-      img {
-        display: block;
-      }
     }
   }
   .row {

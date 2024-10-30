@@ -170,8 +170,9 @@
   }
 }
 @media (max-width: 767px) {
-  .iw-section-title img {
-    display: none;
+  .iw-section-title {
+    max-width: 100%;
+    overflow: hidden;
   }
 }
 
@@ -600,6 +601,7 @@
 @media (max-width: 767px) {
   .iw-about {
     margin-top: 16px !important;
+    margin-bottom: 40px;
   }
 }
 .iw-about .quick-links {
@@ -920,6 +922,12 @@
   }
   .iw-about .cta-links .more {
     display: none;
+  }
+}
+@media (max-width: 767px) {
+  .iw-about .cta-links {
+    flex-direction: column;
+    gap: 0;
   }
 }
 
@@ -2431,7 +2439,6 @@
 }
 @media (max-width: 767px) {
   .iw-audit {
-    overflow: hidden;
     padding-top: 0;
   }
 }
@@ -2441,9 +2448,6 @@
 @media (max-width: 767px) {
   .iw-audit .iw-section-title {
     margin-bottom: 20px;
-  }
-  .iw-audit .iw-section-title img {
-    display: block;
   }
 }
 @media (max-width: 767px) {
@@ -2461,17 +2465,11 @@
 @media (max-width: 767px) {
   .iw-leadership {
     padding-top: 40px;
-    overflow: hidden;
   }
 }
 .iw-leadership .iw-section-title {
   margin-bottom: 32px;
   white-space: nowrap;
-}
-@media (max-width: 767px) {
-  .iw-leadership .iw-section-title img {
-    display: block;
-  }
 }
 .iw-leadership .leadership-slide {
   margin-left: -20px;
@@ -2642,19 +2640,9 @@
   background-image: url(../images/background/advisors.png);
   background-size: cover;
 }
-@media (max-width: 767px) {
-  .iw-advisors {
-    overflow: hidden;
-  }
-}
 .iw-advisors .iw-section-title {
   margin-bottom: 23px;
   white-space: nowrap;
-}
-@media (max-width: 767px) {
-  .iw-advisors .iw-section-title img {
-    display: block;
-  }
 }
 .iw-advisors .advisors-slide a {
   position: relative;
@@ -2772,11 +2760,6 @@
   background-image: url(../images/background/partner.png);
   background-size: cover;
 }
-@media (max-width: 767px) {
-  .iw-partners {
-    overflow: hidden;
-  }
-}
 .iw-partners .iw-section-title {
   margin-bottom: 40px;
   white-space: nowrap;
@@ -2784,9 +2767,6 @@
 @media (max-width: 767px) {
   .iw-partners .iw-section-title {
     margin-bottom: 30px;
-  }
-  .iw-partners .iw-section-title img {
-    display: block;
   }
 }
 .iw-partners .row {
@@ -2951,18 +2931,12 @@
 }
 @media (max-width: 767px) {
   .iw-media {
-    overflow: hidden;
     margin-bottom: 0;
     padding-bottom: 0;
   }
 }
 .iw-media .iw-section-title {
   margin-bottom: 10px;
-}
-@media (max-width: 767px) {
-  .iw-media .iw-section-title img {
-    display: block;
-  }
 }
 .iw-media .nav-tabs {
   margin-bottom: 26px;
@@ -3141,7 +3115,6 @@
     padding-top: 45px;
     margin-bottom: 0;
     padding-bottom: 60px;
-    overflow: hidden;
   }
 }
 .iw-faqs .iw-section-title {
@@ -3150,9 +3123,6 @@
 @media (max-width: 767px) {
   .iw-faqs .iw-section-title {
     margin-bottom: 26px;
-  }
-  .iw-faqs .iw-section-title img {
-    display: block;
   }
 }
 .iw-faqs .nav-tabs {
