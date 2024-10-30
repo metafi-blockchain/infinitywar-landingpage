@@ -47,7 +47,7 @@ function setResponsive() {
       dots: false,
       arrows: true
     })
-
+    $('.iw-news-slide').slick('unslick');
     $('.iw-news-slide').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -217,7 +217,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 4,
-          initialSlide: 4
         }
       },
       {
@@ -225,7 +224,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
           dots: true,
           arrows: false
         }
@@ -235,7 +233,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1.5, // Hiển thị 1.5 item
           slidesToScroll: 1.5,
-          initialSlide: 1.5,
           dots: true,
           arrows: false
         }
@@ -245,7 +242,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1, // Hiển thị 1 item
           slidesToScroll: 1,
-          initialSlide: 1,
           dots: true,
           arrows: false
         }
