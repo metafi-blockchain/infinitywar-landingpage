@@ -719,7 +719,7 @@ $color-highlight2: #dd7041;
           line-height: 38.67px;
           letter-spacing: -0.03em;
           text-align: center;
-          @media (max-width: 400px) {
+          @media (max-width: 576px) {
             font-size: 28px;
             br {
               display: block;
