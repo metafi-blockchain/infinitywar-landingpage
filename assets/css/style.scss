@@ -251,6 +251,10 @@ $color-highlight2: #dd7041;
     text-transform: uppercase;
     color: $color-white;
     text-shadow: 0px 0px 25px $color-blue2;
+
+    @media (max-width: 767px) {
+      text-shadow: 0px 0px 15px $color-blue2;
+    }
   }
 
   @media (max-width: 1200px) {
@@ -1663,6 +1667,14 @@ $color-highlight2: #dd7041;
           }
         }
       }
+
+      @media (max-width: 767px) {
+        gap: 4px;
+
+        span {
+          text-align: left;
+        }
+      }
     }
   }
 
@@ -1713,6 +1725,10 @@ $color-highlight2: #dd7041;
         img {
           width: 71px;
           height: auto;
+
+          @media (max-width: 767px) {
+            width: 55px;
+          }
         }
         .decoration {
           &-2 {
