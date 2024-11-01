@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: infinitywar-landingpage
+  namespace: infinitywar
+  labels:
+    app: infinitywar-landingpage
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: infinitywar-landingpage
+  template:
+    metadata:
+      labels:
+        app: infinitywar-landingpage
+    spec:
+      containers:
+      - name: infinity-war-landing-page-container
+        image: roster90/intinitywar-landing-page:0.1.0
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+        

@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: infinitywar-landingpage-ingress
+  namespace: infinitywar
+  annotations:
+    kubernetes.io/ingress.class: "alb"  # Sử dụng ALB thay vì NGINX
+    alb.ingress.kubernetes.io/scheme: internet-facing  # Để ALB có thể truy cập từ bên ngoài
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'  # Định nghĩa các cổng ALB lắng nghe
+spec:
+  rules:
+  - host: infinitywar.metafi.gg  # Thay thế bằng tên miền thực tế của bạn
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: infinitywar-landingpage  # Tên Service đã tạo
+            port:
+              number: 80  # Cổng mà Service đang expose
