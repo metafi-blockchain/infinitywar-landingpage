@@ -5,7 +5,7 @@ metadata:
   namespace: infinitywar
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing  # Để ALB có thể truy cập từ bên ngoài
-    alb.ingress.kubernetes.io/target-type: instance
+    alb.ingress.kubernetes.io/target-type: instance 
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'  # Định nghĩa các cổng ALB lắng nghe
 spec:
   ingressClassName: alb  # Thay vì dùng annotation, xác định class trực tiếp tại đây
