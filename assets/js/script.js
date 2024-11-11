@@ -60,6 +60,12 @@ $(window).on('resize', () => {
   setResponsive()
 })
 $(document).ready(function () {
+
+  $('a.menu-link').on('click', function () {
+    const section = $(this).data('section')
+    $(`#${section}`).scrollIntoView({ behavior: 'smooth' });
+  })
+
   $(window).scroll(function () {
     var wScroll = $(this).scrollTop()
     if (wScroll >= 80) {

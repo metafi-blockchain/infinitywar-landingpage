@@ -1,4 +1,5 @@
 .iw-milestone {
+  margin-top: -50px;
   margin-bottom: 80px;
   &-container {
     position: relative;
@@ -193,6 +194,7 @@
   }
 
   @media (max-width: 1024px) {
+    margin-top: -50px;
     &-box {
       &-content img {
         width: 20.45vw;

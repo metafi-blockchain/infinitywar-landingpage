@@ -475,6 +475,13 @@ $color-highlight2: #dd7041;
     }
   }
 
+  &-metafi {
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
+
   @media (max-width: 1440px) {
     &-inner {
       gap: 16px;
@@ -1509,7 +1516,8 @@ $color-highlight2: #dd7041;
       justify-content: center;
       gap: 10px;
       position: relative;
-
+      text-decoration: none;
+      color: white;
       img {
         width: 91px;
         height: 91px;
