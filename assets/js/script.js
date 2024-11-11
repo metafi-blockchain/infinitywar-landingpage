@@ -47,7 +47,7 @@ function setResponsive() {
       dots: false,
       arrows: true
     })
-    $('.iw-news-slide').slick('unslick');
+    
     $('.iw-news-slide').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
