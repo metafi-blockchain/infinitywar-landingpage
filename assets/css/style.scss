@@ -2206,6 +2206,22 @@ $color-highlight2: #dd7041;
     max-width: 1598px;
   }
 }
+
+.modal-content {
+  background-color: transparent;
+  border: 0;
+  border-radius: 10px;
+  .modal-header {
+    border: 0;
+    padding: 0;
+  }
+  .btn-close {
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: -30px;
+    z-index: 4;
+  }
+}
 @import './button';
 @import './slick';
 @import './milestone';

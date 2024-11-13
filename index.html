@@ -145,7 +145,7 @@
                 </li>
               </ul>
             </div>
-            <a href="#" class="btn btn-warning iw-header-marketplace">
+            <a href="http://market.metafi.gg/" target="_blank" class="btn btn-warning iw-header-marketplace">
               <span>Marketplace</span>
               <img src="assets/images/button-dc.png" alt="" />
             </a>
@@ -170,7 +170,7 @@
       </div>
       <div class="iw-banner-inner">
         <div class="container">
-          <button type="button">
+          <button type="button" id="PlayVideo">
             <svg
               width="121"
               height="120"
@@ -2792,24 +2792,24 @@
             </div>
             <div class="col-xl-3 col-4">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Game play</a></li>
-                <li><a href="#">How to play</a></li>
-                <li><a href="#">Marketplace</a></li>
+                <li><a href="#section-home">Home</a></li>
+                <li><a href="https://mefi.gitbook.io/infinity-war-en/gameplay/1.-activities" target="_blank">Game play</a></li>
+                <li><a href="#section-gameplay">How to play</a></li>
+                <li><a href="https://market.MetaFi.gg" target="_blank">Marketplace</a></li>
               </ul>
             </div>
             <div class="col-xl-3 col-5">
               <ul>
-                <li><a href="#">About Infinity War</a></li>
-                <li><a href="#">Policy</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Audit Report</a></li>
+                <li><a href="https://mefi.gitbook.io/infinity-war-en" target="_blank">About Infinity War</a></li>
+                <li><a href="#section-policy">Policy</a></li>
+                <li><a href="https://mefi.gitbook.io/infinity-war-en/support" target="_blank">Support</a></li>
+                <li><a href="https://mefi.gitbook.io/infinity-war-en/audit-report" target="_blank">Audit Report</a></li>
               </ul>
             </div>
             <div class="col-xl-3 col-3">
               <ul>
-                <li><a href="#">Pitchdeck</a></li>
-                <li><a href="#">Whitepaper</a></li>
+                <li><a href="https://mefi.gitbook.io/infinity-war-en/pitchdeck" target="_blank">Pitchdeck</a></li>
+                <li><a href="#section-whitepaper">Whitepaper</a></li>
               </ul>
             </div>
           </div>
@@ -2842,6 +2842,34 @@
         </div>
       </div>
     </footer>
+
+    <div
+			class="modal fade"
+			id="videoModal"
+			tabindex="-1"
+			aria-labelledby="videoModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<iframe
+							style="width: 100%; min-height: 80vh"
+							src="#"
+							frameborder="0"
+							allow="autoplay"
+						></iframe>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
