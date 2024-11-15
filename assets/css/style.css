@@ -1114,6 +1114,10 @@
     gap: 8px;
   }
 }
+.iw-top-news-content-right .news-list .news-item .thumb img {
+  width: 125px;
+  height: 71px;
+}
 .iw-top-news-content-right .news-list .news-item-content {
   display: flex;
   flex-direction: column;
@@ -1377,8 +1381,6 @@
     height: auto;
     z-index: 3;
   }
-}
-@media (max-width: 1024px) {
   .iw-top-news-addition {
     bottom: -185px;
   }
@@ -1415,16 +1417,12 @@
   .iw-top-news-addition-item .decoration-2 {
     display: none;
   }
-}
-@media (max-width: 1024px) {
   .iw-top-news-addition-item:nth-child(1)::after {
     border-bottom: none;
     height: 25px;
     top: -25px;
     left: 30.5%;
   }
-}
-@media (max-width: 1024px) {
   .iw-top-news-addition-item:nth-child(2)::after {
     content: "";
     position: absolute;
@@ -1435,8 +1433,6 @@
     border-right: 1px solid #46b0ee;
     width: 15%;
   }
-}
-@media (max-width: 1024px) {
   .iw-top-news-addition-item:nth-child(4)::after {
     display: none;
   }
@@ -1767,8 +1763,6 @@
     font-weight: 300;
     line-height: 17.58px;
   }
-}
-@media (max-width: 1200px) {
   .iw-footer-menu ul {
     margin-bottom: 20px;
   }
@@ -1799,16 +1793,12 @@
     width: 245px;
     height: auto;
   }
-}
-@media (max-width: 475px) {
   .iw-footer-join-title {
     font-size: 35px;
     font-weight: 600;
     line-height: 41.02px;
     text-align: center;
   }
-}
-@media (max-width: 475px) {
   .iw-footer-join-links {
     flex-direction: column;
     gap: 32px;
@@ -1835,16 +1825,12 @@
     display: flex;
     justify-content: center;
   }
-}
-@media (max-width: 475px) {
   .iw-footer-form-label {
     margin-bottom: 0;
     font-size: 15px;
     font-weight: 300;
     line-height: 17.58px;
   }
-}
-@media (max-width: 475px) {
   .iw-footer-form-control a {
     font-size: 15px;
     font-weight: 300;
@@ -1860,8 +1846,6 @@
   .iw-footer-menu ul {
     margin-bottom: 20px;
   }
-}
-@media (max-width: 475px) {
   .iw-footer-menu ul li a {
     font-size: 16px;
     font-weight: 500;
@@ -2784,13 +2768,9 @@
   .iw-advisors .advisors-slide a:first-child {
     border-top: 1px solid #46b0ee;
   }
-}
-@media (max-width: 1024px) {
   .iw-advisors .advisors-slide a:last-child {
     border-bottom: 1px solid #46b0ee;
   }
-}
-@media (max-width: 1024px) {
   .iw-advisors .advisors-slide a:hover, .iw-advisors .advisors-slide a.active {
     border: none;
     --border-color: #dd7041;
