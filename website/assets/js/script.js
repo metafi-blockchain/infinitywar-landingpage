@@ -47,7 +47,7 @@ function setResponsive() {
       dots: false,
       arrows: true
     })
-    $('.iw-news-slide').slick('unslick');
+
     $('.iw-news-slide').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -60,6 +60,11 @@ $(window).on('resize', () => {
   setResponsive()
 })
 $(document).ready(function () {
+  $('a.menu-link').on('click', function () {
+    const section = $(this).data('section')
+    $(`#${section}`).scrollIntoView({ behavior: 'smooth' })
+  })
+
   $(window).scroll(function () {
     var wScroll = $(this).scrollTop()
     if (wScroll >= 80) {
@@ -216,7 +221,7 @@ $(document).ready(function () {
         breakpoint: 1440, // Màn hình xl (1200px trở lên)
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToScroll: 4
         }
       },
       {
@@ -254,6 +259,19 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: true
+  })
+
+  $('#PlayVideo').on('click', () => {
+    $('#videoModal iframe').attr(
+      'src',
+      'https://www.youtube.com/embed/kNIDk5dQsJU?si=4gzOEuIDZfrb9OHE?autoplay=1&enablejsapi=1'
+    )
+    var myModalEl = document.getElementById('videoModal')
+    var videoModal = new bootstrap.Modal(myModalEl, {})
+    videoModal.show()
+    myModalEl.addEventListener('hidden.bs.modal', function (event) {
+      $('#videoModal iframe').attr('src', '')
+    })
   })
 })
 const BRUCE_ITEMS = [

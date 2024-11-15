@@ -322,6 +322,10 @@
   height: 100px;
   margin: -34px -21px 0 -10px;
 }
+.iw-header-metafi img {
+  height: 40px;
+  width: auto;
+}
 @media (max-width: 1440px) {
   .iw-header-inner {
     gap: 16px;
@@ -1222,6 +1226,8 @@
   justify-content: center;
   gap: 10px;
   position: relative;
+  text-decoration: none;
+  color: white;
 }
 .iw-top-news-addition-item img {
   width: 91px;
@@ -1879,6 +1885,22 @@
     max-width: 1598px;
   }
 }
+.modal-content {
+  background-color: transparent;
+  border: 0;
+  border-radius: 10px;
+}
+.modal-content .modal-header {
+  border: 0;
+  padding: 0;
+}
+.modal-content .btn-close {
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom: -30px;
+  z-index: 4;
+}
+
 .mf-btn-s {
   position: relative;
   display: inline-flex;
@@ -1945,6 +1967,7 @@
 }
 
 .iw-milestone {
+  margin-top: -50px;
   margin-bottom: 80px;
 }
 .iw-milestone-container {
@@ -2129,6 +2152,9 @@
   bottom: 40px;
 }
 @media (max-width: 1024px) {
+  .iw-milestone {
+    margin-top: -50px;
+  }
   .iw-milestone-box-content img {
     width: 20.45vw;
     height: auto;
