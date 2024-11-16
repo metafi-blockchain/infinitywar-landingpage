@@ -1396,6 +1396,12 @@ $color-highlight2: #dd7041;
           @media (max-width: 767px) {
             gap: 8px;
           }
+          .thumb {
+            img {
+              width: 125px;
+              height: 71px;
+            }
+          }
 
           &-content {
             display: flex;
