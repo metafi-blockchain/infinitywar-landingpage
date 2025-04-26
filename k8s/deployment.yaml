@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: infinity-war-landing-page-container
-        image: roster90/intinitywar-landing-page:0.1.0
+        image: roster90/intinitywar-landing-page:0.1.4
         ports:
         - containerPort: 80
         resources:
