@@ -6,7 +6,7 @@ metadata:
   labels:
     app: infinitywar-landingpage
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: infinitywar-landingpage
@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
       - name: infinity-war-landing-page-container
-        image: roster90/intinitywar-landing-page:0.1.4
+        image: metafi/intinitywar-landing-page:0.1.4
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
         resources:
